@@ -1,0 +1,29 @@
+html {
+    background-image: url(../img/Navefuera.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0%;
+    height: 100vh;
+}
+
+.effectoletra {
+    font-size: 20px;
+
+    animation: teclear js steps(16); efecto .5s step end infinite alternate;
+}
+
+@keyframes teclear {
+    from {
+        clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);   
+    }
+    to {
+        clip-path: polygon(0 0,100% 0,100% 100%, 0% 100%);
+    }
+} 
+
+@keyframes efecto {
+    50% {
+        border-color: transparent;
+    }
+}
